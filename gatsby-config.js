@@ -4,6 +4,10 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`
 })
 
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config()
+}
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
