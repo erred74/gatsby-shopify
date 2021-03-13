@@ -60,16 +60,16 @@ const MiniCart = ({ hasItems }) => {
         {!hasItems && <li id="cart-title">You don't have any items in your cart.</li>}
       </MiniCartStyle>
       <MiniCartTotalStyle>
-        <li id="freeShipMsg" class="freeShipMsg" ><i class="ad flaticon-delivery-truck"></i> Spent <b class="freeShip"></b> more for free shipping</li>
-        <li id="freeShipclaim" class="freeShipMsg freeShipclaim"><i class="ad flaticon-delivery-truck"></i> You have got <b>FREE SHIPPING</b></li>
-        <li class="cart-subtotal-row d-flex">
+        <li id="freeShipMsg" className="freeShipMsg" ><i className="ad flaticon-delivery-truck"></i> Spent <b className="freeShip"></b> more for free shipping</li>
+        <li id="freeShipclaim" className="freeShipMsg freeShipclaim"><i className="ad flaticon-delivery-truck"></i> You have got <b>FREE SHIPPING</b></li>
+        <li className="cart-subtotal-row d-flex">
           <span>Subtotal:</span>
-          <span class="product-price">
-            <span class="money">{checkout.subtotalPrice} €</span>
+          <span className="product-price">
+            <span className="money">{checkout.subtotalPrice} €</span>
           </span>
         </li>
-        <li class="buttonSet">
-          <p class="cart__shipping">Shipping &amp; taxes calculated at checkout</p>
+        <li className="buttonSet">
+          <p className="cart__shipping">Shipping &amp; taxes calculated at checkout</p>
           {/*checkout.totalTax*/}
           {/*checkout.totalPrice*/}
           <button
