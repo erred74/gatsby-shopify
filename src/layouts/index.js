@@ -8,25 +8,6 @@ import '../assets/sass/custom.scss'
 import Footer from '../components/Footer';
 
 const GlobalStyles = createGlobalStyle`
-@font-face {
-  font-family: "Flaticon";
-  src: url("../../static/fonts/Flaticon.eot");
-  src: url("../../static/fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
-       url("../../static/fonts/Flaticon.woff2") format("woff2"),
-       url("../../static/fonts/Flaticon.woff") format("woff"),
-       url("../../static/fonts/Flaticon.ttf") format("truetype"),
-       url("../../static/fonts/Flaticon.svg#Flaticon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: "Flaticon";
-    src: url("./Flaticon.svg#Flaticon") format("svg");
-  }
-}
-
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
